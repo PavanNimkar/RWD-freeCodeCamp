@@ -1,0 +1,222 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Open Sans", sans-serif;
+  scroll-behavior: smooth;
+}
+
+body {
+  width: 100%;
+}
+
+/* Nav-Bar */
+
+#nav-bar {
+  width: 100%;
+  background-color: #ffb000;
+  position: fixed;
+  top: 0;
+}
+
+#nav-links {
+  display: flex;
+  list-style: none;
+  align-items: center;
+  justify-content: space-around;
+  padding: 1rem;
+  font-size: 16px;
+}
+
+.link-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 1em;
+  text-align: center;
+}
+
+#nav-links li a {
+  text-decoration: none;
+  color: black;
+}
+
+#nav-links li {
+  padding: 0.3rem 0.5rem;
+}
+
+#nav-links li:hover {
+  background-color: white;
+  border-radius: 0.5rem;
+}
+
+#nav-links li a:hover {
+  color: #ffb000;
+}
+
+/* hamburger menu */
+
+.hamburger {
+  display: none;
+  width: 0;
+  /* align-items: right; */
+}
+
+.line {
+  display: block;
+  width: 30px;
+  margin: 4px 0;
+  height: 5px;
+  /* gap: 1px; */
+  background-color: white;
+}
+
+/* Hero Title */
+
+#title-container {
+  margin-top: 3.5rem;
+  text-align: center;
+  padding: 0.8em 1em;
+  display: flex;
+  flex-direction: column;
+  gap: 0.3em;
+  background-color: white;
+}
+
+/* Hero */
+
+#hero-section {
+  width: 100%;
+}
+
+#image {
+  max-width: 100%;
+}
+
+#img-div {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  gap: 0.5em;
+}
+
+/* Information section */
+#info,
+#tribute-info {
+  width: 100%;
+}
+
+/* Introduction */
+
+.sec-title {
+  margin-left: 1.5rem;
+}
+
+.intro-text {
+  display: flex;
+  gap: 1rem;
+  text-align: justify;
+  align-items: center;
+  padding: 1.5rem;
+}
+
+.intro-img {
+  height: 30%;
+  width: 48%;
+  border-radius: 1rem;
+}
+
+.divider {
+  height: 3px;
+  background-color: grey;
+  opacity: 0.3;
+  margin: 1rem 0;
+}
+
+/* Social work */
+
+.sub-title {
+  text-align: center;
+  margin-top: 1rem;
+}
+
+.sw-img-text-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  justify-content: center;
+  text-align: justify;
+  padding: 1.5rem;
+}
+
+.sw-img {
+  width: 100%;
+  display: block;
+  margin: 0 auto;
+  border-radius: 1rem;
+}
+
+/* Photo Gallery */
+
+.pg-imgs-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  padding: 1.5rem;
+}
+
+.pg-img-container {
+  width: 48%;
+  border-radius: 1rem;
+  overflow: hidden;
+}
+
+/* Awards */
+.awards-imgs-container {
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+  justify-content: center;
+}
+
+.awards-img-container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  width: 40%;
+}
+
+#one {
+  margin-top: 6.4rem;
+}
+
+/* Quotes */
+
+#quote-container {
+  width: 100%;
+  height: 30%;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  font-size: 1.2rem;
+  gap: 0.6rem;
+  margin-bottom: 1rem;
+  /* background-color: #ffb000 */
+}
+
+/* footer */
+
+#footer {
+  width: 100%;
+  height: 25%;
+  background-color: #ffb000;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  padding: 1rem;
+}

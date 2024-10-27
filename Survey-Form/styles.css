@@ -1,0 +1,136 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  width: 100%;
+  /* height: 100%; */
+  background-image: url("https://www.hospitalityaction.org.uk/media/3249/mental-health-overview.jpg?anchor=center&mode=crop&width=636&height=402&rnd=133092811680000000");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: #e8e1d7;
+  font-family: roboto;
+  height: fit-content;
+}
+
+#container {
+  position: relative;
+  height: fit-content;
+  width: 100%;
+  padding-top: 10px;
+}
+
+#black {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 102%;
+  background-color: black;
+  opacity: 0.2;
+  z-index: -1;
+}
+
+#title,
+#description {
+  text-align: center;
+  color: white;
+}
+
+#description {
+  margin-bottom: 1rem;
+  font-size: 1rem;
+}
+
+/* Form starts here */
+
+#survey-form {
+  height: fit-content;
+  width: 90vw;
+  max-width: 500px;
+  min-width: 100px;
+  margin: 1rem auto;
+  border-radius: 0.6rem;
+  background-color: #2e2b2c;
+  padding: 2rem 1rem;
+  box-sizing: border-box;
+  opacity: 0.9;
+}
+
+#survey-form label {
+  display: inline;
+  color: white;
+}
+
+#number,
+#name,
+#email {
+  display: block;
+  width: 100%;
+  height: 2rem;
+  padding: 0.4rem;
+  box-sizing: border-box;
+  margin-bottom: 1rem;
+  /* border: none; */
+  /* border-radius: 0.1rem; */
+}
+
+input[type="text"]:focus {
+  outline: none;
+  border: none;
+  width: 100%;
+  height: 2rem;
+  padding: 0.4rem;
+  box-sizing: border-box;
+}
+
+#dropdown {
+  width: 100%;
+  height: 2rem;
+  padding: 0.4rem;
+  box-sizing: border-box;
+  margin-bottom: 1rem;
+}
+
+#radio-parah {
+  color: white;
+  margin-top: 0.6rem;
+  margin-bottom: 0.2rem;
+}
+
+#checkbox-container {
+  display: flex;
+  flex-direction: column;
+}
+
+#feedback {
+  width: 100%;
+  height: 4rem;
+  padding: 0.4rem;
+  box-sizing: border-box;
+  margin-top: 0;
+  border-radius: 5px;
+}
+
+#feedback:focus {
+  outline: 1px solid pink;
+}
+
+#submit {
+  display: flex;
+  margin-top: 1rem;
+  width: 100%;
+  height: 1.8rem;
+  align-items: center;
+  justify-content: center;
+  background-color: pink;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#file::hover {
+  cursor: pointer;
+}
