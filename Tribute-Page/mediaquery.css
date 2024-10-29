@@ -6,10 +6,10 @@
   .link-container {
     display: block;
     position: fixed;
-    top: 64px;
+    top: -100%;
     background-color: #ffb000;
     width: 100%;
-    left: -100%;
+    left: 0;
     transition: 0.3s ease-in-out;
   }
 
@@ -95,6 +95,7 @@
   }
 
   .link-container.active {
+    top: 64px;
     left: 0;
   }
 
