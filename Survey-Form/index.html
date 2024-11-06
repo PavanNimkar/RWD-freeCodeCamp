@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mental Health Form</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div id="container">
+      <div id="black"></div>
+      <h1 id="title">Mental Health Survey</h1>
+      <p id="description">
+        Help us to improve the treatment by participating in survey
+      </p>
+
+      <form id="survey-form">
+        <!-- inputs -->
+        <label for="name" id="name-label"
+          >Full Name<input
+            id="name"
+            type="text"
+            placeholder="Your Full Name"
+            required
+        /></label>
+
+        <label for="email" id="email-label"
+          >Email<input
+            id="email"
+            type="email"
+            placeholder="Your Email"
+            required
+        /></label>
+
+        <label for="number" id="number-label"
+          >Age<input
+            id="number"
+            type="number"
+            placeholder="Your Age"
+            min="15"
+            max="100"
+            required
+        /></label>
+
+        <!-- Select -->
+        <label for="dropdown"
+          >Which Country you belong?<select id="dropdown">
+            <option>India</option>
+            <option>Japan</option>
+            <option>USA</option>
+          </select></label
+        >
+
+        <label for="dropdown"
+          >Your Occupation?<select id="dropdown">
+            <option>Student</option>
+            <option>Farmer</option>
+            <option>Teacher</option>
+          </select></label
+        >
+
+        <!-- Radio Buttons -->
+        <p id="radio-parah">Would you like to Volunteer with us?</p>
+        <label
+          ><input type="radio" name="radio" checked value="Yes" /> Yes</label
+        ><br />
+        <label><input type="radio" name="radio" value="No" /> No</label>
+
+        <!-- Checkboxes -->
+        <p id="radio-parah">How are you feeling today?</p>
+        <div id="checkbox-container">
+          <label><input type="checkbox" value="happy" /> Happy</label>
+          <label><input type="checkbox" value="Sad" /> Sad</label>
+          <label><input type="checkbox" value="Depress" /> Depress</label>
+          <label><input type="checkbox" value="Lonely" /> Lonely</label>
+          <label><input type="checkbox" value="Anxious" /> Anxious</label>
+          <label><input type="checkbox" value="Angry" /> Angry</label>
+          <label><input type="checkbox" value="low" /> Low</label>
+        </div>
+
+        <!-- Photo -->
+        <p id="radio-parah" style="margin-top: 1rem">
+          Upload Your Photo(Optional)
+        </p>
+        <input type="file" />
+
+        <!-- textarea -->
+        <p id="radio-parah" style="margin-top: 1rem">Feedback</p>
+        <textarea required placeholder="Feedback" id="feedback"></textarea>
+
+        <!-- submit -->
+        <button id="submit" type="submit">Submit</button>
+      </form>
+    </div>
+  </body>
+</html>

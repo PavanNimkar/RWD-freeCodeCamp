@@ -1,0 +1,107 @@
+@media (max-width: 462px) {
+  #nav-links {
+    height: 4rem;
+  }
+
+  .link-container {
+    display: block;
+    position: fixed;
+    top: -100%;
+    background-color: #ffb000;
+    width: 100%;
+    left: 0;
+    transition: 0.3s ease-in-out;
+  }
+
+  #intro,
+  .intro-text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .intro-img {
+    width: 100%;
+  }
+
+  .sec-title {
+    margin: 0;
+    text-align: center;
+  }
+
+  .awards-title {
+    margin-bottom: 1rem;
+  }
+
+  .pg-img-container {
+    width: 100%;
+    height: fit-content;
+  }
+
+  .pg-img {
+    width: 100%;
+    height: 100%;
+  }
+
+  .awards-imgs-container {
+    flex-direction: column;
+  }
+
+  .awards-img-container {
+    width: 100%;
+  }
+
+  .awards-img-container img {
+    width: 50%;
+    gap: 1rem;
+  }
+
+  #one {
+    margin-top: 0.5rem;
+  }
+
+  .awrads-divider {
+    width: 90%;
+    margin: 1rem auto;
+  }
+
+  #quote-container {
+    font-size: 1em;
+  }
+
+  .hamburger {
+    display: block;
+    height: fit-content;
+    width: fit-content;
+    cursor: pointer;
+  }
+
+  .hamburger .line {
+    transition: 0.3s ease-in-out;
+  }
+
+  .hamburger.active .line:nth-child(1) {
+    transform: rotate(45deg) translateY(7px) translateX(5px);
+    /* margin-left: 2px; */
+  }
+
+  .hamburger.active .line:nth-child(2) {
+    opacity: 0;
+  }
+
+  .hamburger.active .line:nth-child(3) {
+    transform: rotate(-45deg) translateY(-8px) translateX(6px);
+  }
+
+  .link-container.active {
+    top: 64px;
+    left: 0;
+  }
+
+  #nav-links {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+  }
+}
