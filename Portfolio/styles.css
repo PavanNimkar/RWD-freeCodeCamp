@@ -1,0 +1,249 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-family: "Poppins", sans-serif;
+}
+
+#navbar {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 1.5rem;
+  gap: 1.5rem;
+  position: fixed;
+  width: 100%;
+  height: 5vh;
+  top: 0;
+  z-index: 100;
+  background: white;
+}
+
+#navbar a {
+  color: black;
+}
+
+#navbar a:hover {
+  transform: scale(1.1);
+}
+
+#welcome-section {
+  margin-top: 2rem;
+  /* background: red; */
+  height: 90vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  /* background: yellow */
+}
+
+#welcome-section img {
+  height: 20rem;
+}
+
+#welcome-section h1 {
+  font-size: 3rem;
+}
+
+#welcome-section h3 {
+  font-size: 1.5rem;
+}
+
+#heading a button {
+  width: 49%;
+  padding: 0.5rem;
+  border-radius: 1rem;
+  outline: none;
+  background: white;
+  border: 2px solid black;
+  margin-top: 10px;
+  transition: 0.5s ease-in-out;
+}
+
+#heading a button:hover {
+  background: black;
+  color: white;
+  cursor: pointer;
+}
+
+#heading h3 {
+  color: #555;
+}
+
+/* About */
+
+#about {
+  height: 90vh;
+  width: 100%;
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#about img {
+  width: 14rem;
+  border-radius: 1rem;
+}
+
+.about-container {
+  display: flex;
+  gap: 1rem;
+  padding: 2rem;
+  text-align: justify;
+  flex-direction: column;
+  align-items: center;
+}
+
+#name {
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+#name,
+#info {
+  text-align: center;
+}
+
+#info {
+  font-size: 1.5rem;
+}
+
+/* projects */
+
+/* #projects {
+  height: 100vh;
+} */
+
+.outer {
+  width: 20rem;
+  border: 2px solid black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow: hidden;
+  padding: 1rem 0;
+  /* position: relative;
+  height: fit-content; */
+  border-radius: 1rem;
+  justify-content: center;
+  transition: 0.5s ease-in-out;
+}
+
+.image-container {
+  width: 95%;
+}
+
+.image-container img {
+  width: 100%;
+  overflow: hidden;
+  border-radius: 0.5rem;
+}
+
+.title {
+  text-align: center;
+  font-size: 2rem;
+}
+
+.btn-container button {
+  width: 5rem;
+  padding: 0.2rem;
+  border-radius: 1rem;
+  outline: none;
+  background: white;
+  border: 2px solid black;
+  margin-top: 10px;
+  transition: 1s ease-in-out;
+}
+
+.btn-container button:hover {
+  color: white;
+  background: black;
+}
+
+.outer:hover {
+  transform: scale(1.2);
+}
+
+.project-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.8rem;
+  padding: 0.5rem;
+  justify-content: center;
+}
+
+.title {
+  margin: 1rem auto;
+}
+
+/* contact */
+
+#contact-container {
+  border: 1px solid #555;
+  width: 30%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border-radius: 1rem;
+  margin: 2rem auto;
+  padding: 1rem;
+}
+
+#contact-container a {
+  color: black;
+}
+
+/* Footer */
+footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+footer a {
+  margin-right: 0.8rem;
+  color: black;
+  font-size: 1.5rem;
+}
+
+/* styles */
+i {
+  margin-right: 4px;
+}
+
+@media screen and (max-width: 500px) {
+  #welcome-section {
+    flex-direction: column;
+    text-align: center;
+    gap: 0rem;
+  }
+
+  .about-container {
+    flex-direction: column;
+    text-align: center;
+    gap: 0rem;
+    align-items: center;
+    /* margin: 4rem; */
+  }
+
+  #navbar {
+    display: flex;
+    justify-content: center;
+  }
+
+  #name {
+    font-weight: 700;
+    font-size: 1.5rem;
+  }
+
+  .title {
+    margin-top: 1rem;
+  }
+}
