@@ -157,7 +157,7 @@ img {
   text-align: justify;
 }
 
-#code {
+.code {
   background-color: #e3e3e3;
   height: 3rem;
   border-radius: 1rem;
@@ -170,68 +170,76 @@ img {
   padding: 1rem;
 }
 
-@media screen and (max-width: 320px) {
-  /* body {
-    font-size: 0.8rem;
-  } */
+.hamgurger {
+  height: 2rem;
+  width: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+  display: none;
+}
 
-  .hor-navbar {
-    gap: 3rem;
-    padding: 1rem;
-    /* gap: 0.5rem; */
-    overflow: scroll;
-  }
+.hamgurger .bar {
+  width: 100%;
+  height: 4px;
+  background-color: black;
+  display: block;
+}
 
-  img {
-    height: 1rem;
-  }
-
+@media screen and (max-width: 760px) {
   #main-doc {
-    margin-left: 6.5rem;
-    margin-right: 0.5rem;
+    padding: 1rem;
+    margin-top: 5rem;
+    margin-right: 0;
+    margin-left: 0;
+    margin-bottom: 0;
+    gap: 1rem;
   }
 
   #navbar {
-    width: 30%;
-    top: 1rem;
+    display: none;
   }
 
-  .title {
-    top: 3.8rem;
-    padding-left: 1rem;
-    font-size: 0.7rem;
-    width: 93px;
-    /* background: red; */
+  .code {
+    width: 80%;
+    margin: 0 auto;
   }
 
-  .main-section header {
-    font-size: 0.8rem;
-    font-weight: 600;
+  .hor-navbar {
+    padding: 1em;
   }
 
-  /* .nav-links li {
-    font-size: 0.6rem;
-    padding: 0.5rem;
-  } */
-
-  p {
-    font-size: 0.7rem;
+  .nav-links {
+    display: none;
   }
 
-  ul {
-    font-size: 0.7rem;
-  }
-
-  #navbar ul li {
-    width: 100%;
-    padding-left: 1rem;
-  }
-
-  #code {
-    margin-left: 0.5rem;
-    font-size: 0.7rem;
+  .nav-links.active {
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+    align-items: flex-start;
+    top: 2rem;
+    right: 20px;
+    font-size: 1.2rem;
+    background-color: white;
     padding: 1rem;
-    width: 90%;
-    height: fit-content;
+  }
+
+  .hamgurger {
+    display: flex;
+    transition: all 3s ease-in-out;
+  }
+
+  .hamgurger.active .bar:nth-child(2) {
+    opacity: 0;
+  }
+
+  .hamgurger.active .bar:nth-child(1) {
+    transform: rotate(45deg) translate(11px, 10px);
+  }
+
+  .hamgurger.active .bar:nth-child(3) {
+    transform: rotate(-45deg) translate(6px, -4px);
   }
 }
